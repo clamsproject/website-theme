@@ -17,10 +17,8 @@
       {% endif %}
       {{ site.time | date: '%Y' }}
 
-      {% if site.url-pretty %}
-        &nbsp;&bull;&nbsp;
-        <span class="author-site"><a href="{{ '' | absolute_url }}">{{ site.url-pretty }}</a></span>
-      {% endif %}
+      &nbsp;&bull;&nbsp;
+      <span class="author-site"><a href="https://www.clams.ai">clams.ai</a></span>
 
       {% if site.matomo %}
         {% if site.matomo.opt-out %}

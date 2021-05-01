@@ -4,9 +4,9 @@
 
   {% capture title %}
     {%- if page.share-title -%}
-      {{ page.share-title }}
+      {{ page.share-title | flatify }}
     {%- elsif page.title -%}
-      {{ page.title }}
+      {{ page.title | flatify }}
     {%- else -%}
       {{ site.title }}
     {%- endif -%}
@@ -14,9 +14,9 @@
 
   {% capture description %}
     {%- if page.share-description -%}
-      {{ page.share-description }}
+      {{ page.share-description | flatify }}
     {%- elsif page.subtitle -%}
-      {{ page.subtitle }}
+      {{ page.subtitle | flatify }}
     {%- else -%}
       {%- assign excerpt_length = site.excerpt_length | default: 50 -%}
       {{ page.content | strip_html | xml_escape | truncatewords: excerpt_length | strip }}

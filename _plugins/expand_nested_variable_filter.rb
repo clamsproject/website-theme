@@ -9,3 +9,5 @@ end
 
 Liquid::Template.register_filter(Jekyll::ExpandNestedVariableFilter)
 
+
+# NOTE that this file will not work with github-pages gem (https://github.com/jekyll/jekyll/issues/5265#issuecomment-241267253)
